@@ -1,0 +1,123 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: generate-resource-quota
+  annotations:
+    policies.kyverno.io/title: Generate ResourceQuota for new namespaces
+    policies.kyverno.io/category: Resource Management
+    policies.kyverno.io/severity: high
+    policies.kyverno.io/description: >-
+      Automatically creates ResourceQuota for any namespace that doesn't have one.
+      Critical for preventing resource exhaustion with in-place pod resize.
+spec:
+  background: false
+  rules:
+  - name: generate-quota
+    match:
+      any:
+      - resources:
+          kinds:
+          - Namespace
+    exclude:
+      any:
+      - resources:
+          namespaces:
+          - kube-system
+          - kube-public
+          - kube-node-lease
+          - kyverno
+    generate:
+      apiVersion: v1
+      kind: ResourceQuota
+      name: auto-generated-quota
+      namespace: "{{request.object.metadata.name}}"
+      synchronize: true
+      data:
+        spec:
+          hard:
+            requests.cpu: "10"
+            requests.memory: "20Gi"
+            limits.cpu: "20"
+            limits.memory: "40Gi"
+            pods: "20"
+            persistentvolumeclaims: "10"
+---
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: generate-limit-range
+  annotations:
+    policies.kyverno.io/title: Generate LimitRange for new namespaces
+    policies.kyverno.io/category: Resource Management
+    policies.kyverno.io/severity: high
+spec:
+  background: true
+  rules:
+  - name: generate-limits
+    match:
+      any:
+      - resources:
+          kinds:
+          - Namespace
+    exclude:
+      any:
+      - resources:
+          namespaces:
+          - kube-system
+          - kube-public
+          - kube-node-lease
+          - kyverno
+    generate:
+      apiVersion: v1
+      kind: LimitRange
+      name: auto-generated-limits
+      namespace: "{{request.object.metadata.name}}"
+      synchronize: true
+      data:
+        spec:
+          limits:
+          - default:
+              cpu: "1"
+              memory: "1Gi"
+            defaultRequest:
+              cpu: "0.1"
+              memory: "128Mi"
+            max:
+              cpu: "4"      # Maximum for in-place resize
+              memory: "8Gi"  # Maximum for in-place resize
+            min:
+              cpu: "0.05"
+              memory: "64Mi"
+            type: Container
+---
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: validate-pod-resize-limits
+  annotations:
+    policies.kyverno.io/title: Validate Pod Resize Operations
+    policies.kyverno.io/category: Security
+    policies.kyverno.io/severity: medium
+spec:
+  validationFailureAction: Enforce
+  background: false
+  rules:
+  - name: check-resize-limits
+    match:
+      any:
+      - resources:
+          kinds:
+          - Pod/resize
+    validate:
+      message: "Pod resize exceeds maximum allowed limits. Max CPU: 4, Max Memory: 8Gi"
+      pattern:
+        spec:
+          containers:
+          - name: "*"
+            resources:
+              limits:
+                cpu: "<=4"
+                memory: "<=8Gi"
+              requests:
+                cpu: "<=4"
+                memory: "<=8Gi"
