@@ -1,6 +1,6 @@
 # Kubernetes 1.33 In-Place Pod Resize Demo
 
-Complete demonstration of Kubernetes 1.33 in-place pod resize feature with enterprise-grade security and governance.
+Complete demonstration of Kubernetes 1.33 in-place pod resize feature with enterprise-grade governance.
 
 ## 🎯 What This Demo Includes
 
