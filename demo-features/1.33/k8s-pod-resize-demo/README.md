@@ -96,7 +96,7 @@ kubectl get nodes -o jsonpath='{.items[0].status.allocatable}'
 kubectl get deployment kyverno -n kyverno
 ```
 
-## 🛡️ Governance Features
+## 🛡️ Governance & Security Features
 
 ### Multi-Layer Governance Strategy
 
