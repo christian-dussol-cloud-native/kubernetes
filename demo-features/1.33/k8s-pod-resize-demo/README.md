@@ -43,9 +43,9 @@ k8s-pod-resize-demo/
 ├── resource-quotas.yaml      # ResourceQuota & LimitRange
 ├── kyverno-policies.yaml     # Governance policies
 ├── deploy.sh                 # Setup script
-├── test-resize.sh           # Resize testing script
-├── monitoring.sh            # Real-time monitoring
-└── cleanup.sh              # Cleanup script
+├── test-resize.sh            # Resize testing script
+├── monitoring.sh             # Real-time monitoring
+└── cleanup.sh                # Cleanup script
 ```
 
 ## 🔧 Prerequisites
