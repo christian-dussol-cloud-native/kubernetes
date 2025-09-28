@@ -5,7 +5,7 @@ Complete demonstration of Kubernetes 1.33 in-place pod resize feature with enter
 ## 🎯 What This Demo Includes
 
 - **Zero-downtime pod resizing** with live CPU and memory scaling
-- **Multi-layer security** with ResourceQuotas, LimitRanges, and Kyverno policies
+- **Multi-layer governance** with ResourceQuotas, LimitRanges, and Kyverno policies
 - **Automated governance** that prevents resource abuse
 - **Complete autoscaling setup** (HPA + VPA + Cluster Autoscaler ready)
 - **Real-time monitoring** and validation scripts
@@ -96,9 +96,9 @@ kubectl get nodes -o jsonpath='{.items[0].status.allocatable}'
 kubectl get deployment kyverno -n kyverno
 ```
 
-## 🛡️ Security & Governance Features
+## 🛡️ Governance Features
 
-### Multi-Layer Defense Strategy
+### Multi-Layer Governance Strategy
 
 1. **ResourceQuotas**: Limit total namespace consumption
 2. **LimitRanges**: Cap maximum resize values per container
