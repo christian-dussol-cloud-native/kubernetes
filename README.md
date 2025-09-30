@@ -42,7 +42,7 @@ Passionate about Kubernetes and Cloud Native architectures
 
 🔗 **Links:**
 - GitHub: [@ChristianDussol](https://github.com/ChristianDussol)
-- LinkedIn: [Christian Dussol](https://www.linkedin.com/in/christian-dussol)
+- LinkedIn: [Christian Dussol](https://www.linkedin.com/in/christiandussol)
 
 ## 🤝 Contributing
 
