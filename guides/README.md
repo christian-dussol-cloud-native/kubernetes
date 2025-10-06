@@ -65,7 +65,7 @@ If you find these guides helpful, consider:
 - ⭐ Starring this repository
 - 🐛 Opening an issue for errors or suggestions
 - 💬 Sharing with your team
-- 🔗 Connecting on [LinkedIn](https://linkedin.com/in/christian-dussol)
+- 🔗 Connecting on [LinkedIn](https://www.linkedin.com/in/christiandussol/)
 
 ## 🔄 Updates
 
