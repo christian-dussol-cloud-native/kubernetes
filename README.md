@@ -13,6 +13,9 @@ Collection of visual presentations (carousels) illustrating advanced Kubernetes 
 ### [demo-features/](./demo-features)
 Demonstration scripts, configurations, and practical examples to test the features presented in the carousels.
 
+### [guides/](./guides)
+A collection of practical Kubernetes guides.
+
 ## 🔥 Featured Capabilities
 
 - **In-Place Pod Resize**: Pod resizing without service interruption
