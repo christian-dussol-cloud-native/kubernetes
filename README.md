@@ -5,7 +5,7 @@ Welcome to my repository dedicated to Kubernetes! This project contains resource
 ## 📁 Repository Structure
 
 ### [carousel/](./carousel)
-Collection of visual presentations (carousels) illustrating advanced Kubernetes concepts. Each carousel is accompanied by practical demonstrations and code examples.
+Collection of visual presentations (carousels) illustrating advanced Kubernetes concepts. Each carousel includes practical demonstrations and code examples.
 
 **Available Carousels:**
 - Kubernetes 1.33 - In-Place Pod Resize
