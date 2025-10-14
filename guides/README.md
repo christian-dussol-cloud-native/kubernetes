@@ -21,6 +21,25 @@ Complete command reference organized by role:
 
 ---
 
+### ⚖️ Kubernetes Resource Management - Complete Reference
+
+Comprehensive guide to Kubernetes resource governance:
+
+- **Pod Resources:** requests vs limits explained clearly
+- **LimitRange:** Individual container guardrails
+- **ResourceQuota:** Namespace budget control
+- **Kyverno Policy-as-Code:** 4th layer of governance automation
+- **Best Practices:** Enterprise-tested configurations
+- **Troubleshooting:** Debug commands and error resolution
+
+**The 4-Layer Governance Architecture:**
+1. ResourceQuota (Namespace budget)
+2. LimitRange (Container constraints)
+3. Pod Resources (Developer specs)
+4. Kyverno (Policy automation)
+
+---
+
 ## 🎓 Who Is This For?
 
 - **Developers** shipping containerized applications
@@ -28,6 +47,18 @@ Complete command reference organized by role:
 - **SREs** maintaining production clusters
 - **Security Engineers** enforcing compliance policies
 - **DevOps Teams** looking for best practices
+
+## 📊 Learning Path
+
+**New to Kubernetes?**
+1. Start with the **Cheat Sheet** to learn essential commands
+2. Practice with the command examples
+3. Move to **Resource Management** for governance
+
+**Already using Kubernetes?**
+1. Jump to **Resource Management** for production best practices
+2. Implement the 4-layer governance architecture
+3. Use Kyverno policies for automation
 
 ## ⚡ Quick Start
 
