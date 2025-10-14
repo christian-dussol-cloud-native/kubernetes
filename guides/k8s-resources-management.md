@@ -4,18 +4,18 @@ Comprehensive guide to understanding Kubernetes resource management concepts: Re
 
 ## 📚 Table of Contents
 
-1. [Pod Resources (requests/limits)](#pod-resources)
-2. [LimitRange](#limitrange)
-3. [ResourceQuota](#resourcequota)
-4. [LimitRange vs ResourceQuota](#comparison)
-5. [LimitRange vs Pod Resources](#limitrange-vs-pod-resources)
-6. [Policy-as-Code with Kyverno](#kyverno-policy-as-code)
-7. [Best Practices](#best-practices)
-8. [Troubleshooting](#troubleshooting)
+1. [Pod Resources (requests/limits)](#-pod-resources-requestslimits)
+2. [LimitRange](#-limitrange)
+3. [ResourceQuota](#-resourcequota)
+4. [LimitRange vs ResourceQuota Comparison](#-limitrange-vs-resourcequota-comparison)
+5. [LimitRange vs Pod Resources](#-limitrange-vs-pod-resources)
+6. [Policy-as-Code with Kyverno](#-policy-as-code-with-kyverno)
+7. [Best Practices](#-best-practices)
+8. [Troubleshooting](#-troubleshooting)
 
 ---
 
-## 🎯 Pod Resources (requests/limits) {#pod-resources}
+## 🎯 Pod Resources (requests/limits)
 
 ### What are Pod Resources?
 
@@ -70,7 +70,7 @@ spec:
 
 ---
 
-## 🛡️ LimitRange {#limitrange}
+## 🛡️ LimitRange
 
 ### What is LimitRange?
 
@@ -139,7 +139,7 @@ spec:
 
 ---
 
-## 📊 ResourceQuota {#resourcequota}
+## 📊 ResourceQuota
 
 ### What is ResourceQuota?
 
@@ -208,7 +208,7 @@ kubectl run small-pod --image=nginx --requests='cpu=1'
 
 ---
 
-## ⚖️ LimitRange vs ResourceQuota Comparison {#comparison}
+## ⚖️ LimitRange vs ResourceQuota Comparison
 
 | **Aspect** | **LimitRange** | **ResourceQuota** |
 |:-----------|:---------------|:------------------|
@@ -249,7 +249,7 @@ kubectl run pod11 --image=nginx --requests='cpu=2'  # ❌ Quota exceeded
 
 ---
 
-## 🔄 LimitRange vs Pod Resources {#limitrange-vs-pod-resources}
+## 🔄 LimitRange vs Pod Resources
 
 ### Key Difference: Level of Application
 
@@ -297,7 +297,7 @@ kubectl run pod11 --image=nginx --requests='cpu=2'  # ❌ Quota exceeded
 
 ---
 
-## 🚀 Policy-as-Code with Kyverno {#kyverno-policy-as-code}
+## 🚀 Policy-as-Code with Kyverno
 
 ### What is Kyverno?
 
@@ -537,7 +537,7 @@ kubectl get events --field-selector reason=PolicyApplied
 
 ---
 
-## 🎯 Best Practices {#best-practices}
+## 🎯 Best Practices
 
 ### 1. Resource Sizing Strategy
 
@@ -646,7 +646,7 @@ kubectl get policyreport -A
 
 ---
 
-## 🔧 Troubleshooting {#troubleshooting}
+## 🔧 Troubleshooting
 
 ### Common Error Messages and Solutions
 
