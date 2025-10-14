@@ -15,7 +15,7 @@ Comprehensive guide to understanding Kubernetes resource management concepts: Re
 
 ---
 
-## 🎯 Pod Resources (requests/limits)
+## 🎯 Pod Resources (requests/limits) {#pod-resources}
 
 ### What are Pod Resources?
 
@@ -70,7 +70,7 @@ spec:
 
 ---
 
-## 🛡️ LimitRange
+## 🛡️ LimitRange {#limitrange}
 
 ### What is LimitRange?
 
@@ -139,7 +139,7 @@ spec:
 
 ---
 
-## 📊 ResourceQuota
+## 📊 ResourceQuota {#resourcequota}
 
 ### What is ResourceQuota?
 
@@ -208,7 +208,7 @@ kubectl run small-pod --image=nginx --requests='cpu=1'
 
 ---
 
-## ⚖️ LimitRange vs ResourceQuota Comparison
+## ⚖️ LimitRange vs ResourceQuota Comparison {#comparison}
 
 | **Aspect** | **LimitRange** | **ResourceQuota** |
 |:-----------|:---------------|:------------------|
@@ -249,7 +249,7 @@ kubectl run pod11 --image=nginx --requests='cpu=2'  # ❌ Quota exceeded
 
 ---
 
-## 🔄 LimitRange vs Pod Resources
+## 🔄 LimitRange vs Pod Resources {#limitrange-vs-pod-resources}
 
 ### Key Difference: Level of Application
 
@@ -297,7 +297,7 @@ kubectl run pod11 --image=nginx --requests='cpu=2'  # ❌ Quota exceeded
 
 ---
 
-## 🚀 Policy-as-Code with Kyverno
+## 🚀 Policy-as-Code with Kyverno {#kyverno-policy-as-code}
 
 ### What is Kyverno?
 
@@ -537,7 +537,7 @@ kubectl get events --field-selector reason=PolicyApplied
 
 ---
 
-## 🎯 Best Practices
+## 🎯 Best Practices {#best-practices}
 
 ### 1. Resource Sizing Strategy
 
@@ -646,7 +646,7 @@ kubectl get policyreport -A
 
 ---
 
-## 🔧 Troubleshooting
+## 🔧 Troubleshooting {#troubleshooting}
 
 ### Common Error Messages and Solutions
 
@@ -754,7 +754,7 @@ kubectl logs -n kyverno -l app=kyverno
 1. **Pod Resources** = What each container needs/can use
 2. **LimitRange** = Rules for individual container sizes
 3. **ResourceQuota** = Budget for entire namespace
-4. **Kyverno** = policy automation layer
+4. **Kyverno** = Policy automation layer
 5. **All four work together** to provide complete resource governance
 
 ### When to Use What
@@ -787,7 +787,7 @@ kubectl logs -n kyverno -l app=kyverno
 - **Kyverno** validates resize operations and maintains ratios
 - **resizePolicy** controls whether restart is needed for resize
 
-**Together, they create a complete, safe, and automated environment for Kubernetes operations**
+**Together, they create a complete, safe, and automated environment for modern Kubernetes operations!**
 
 ---
 
