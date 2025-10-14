@@ -70,7 +70,7 @@ spec:
 
 ---
 
-## 🛡️ LimitRange {#limitrange}
+## 🛡️ LimitRange
 
 ### What is LimitRange?
 
