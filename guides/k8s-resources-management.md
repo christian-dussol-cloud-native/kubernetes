@@ -139,7 +139,7 @@ spec:
 
 ---
 
-## 📊 ResourceQuota {#resourcequota}
+## 📊 ResourceQuota
 
 ### What is ResourceQuota?
 
@@ -208,7 +208,7 @@ kubectl run small-pod --image=nginx --requests='cpu=1'
 
 ---
 
-## ⚖️ LimitRange vs ResourceQuota Comparison {#comparison}
+## ⚖️ LimitRange vs ResourceQuota Comparison
 
 | **Aspect** | **LimitRange** | **ResourceQuota** |
 |:-----------|:---------------|:------------------|
@@ -249,7 +249,7 @@ kubectl run pod11 --image=nginx --requests='cpu=2'  # ❌ Quota exceeded
 
 ---
 
-## 🔄 LimitRange vs Pod Resources {#limitrange-vs-pod-resources}
+## 🔄 LimitRange vs Pod Resources
 
 ### Key Difference: Level of Application
 
@@ -297,7 +297,7 @@ kubectl run pod11 --image=nginx --requests='cpu=2'  # ❌ Quota exceeded
 
 ---
 
-## 🚀 Policy-as-Code with Kyverno {#kyverno-policy-as-code}
+## 🚀 Policy-as-Code with Kyverno
 
 ### What is Kyverno?
 
@@ -537,7 +537,7 @@ kubectl get events --field-selector reason=PolicyApplied
 
 ---
 
-## 🎯 Best Practices {#best-practices}
+## 🎯 Best Practices
 
 ### 1. Resource Sizing Strategy
 
@@ -646,7 +646,7 @@ kubectl get policyreport -A
 
 ---
 
-## 🔧 Troubleshooting {#troubleshooting}
+## 🔧 Troubleshooting
 
 ### Common Error Messages and Solutions
 
