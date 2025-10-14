@@ -1,4 +1,4 @@
-# Kubernetes Resources Management - Complete Reference
+# Kubernetes Resources Management
 
 Comprehensive guide to understanding Kubernetes resource management concepts: ResourceQuotas, LimitRanges, Pod resource specifications, and Policy-as-Code with Kyverno.
 
