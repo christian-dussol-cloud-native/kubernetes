@@ -21,7 +21,7 @@ Complete command reference organized by role:
 
 ---
 
-### [Kubernetes Resource Management Guide](./k8s-resources-management.md)
+### 📖 [Kubernetes Resource Management Guide](./k8s-resources-management.md)
 
 Comprehensive guide to Kubernetes resource governance:
 
