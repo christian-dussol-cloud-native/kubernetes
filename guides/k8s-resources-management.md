@@ -15,7 +15,7 @@ Comprehensive guide to understanding Kubernetes resource management concepts: Re
 
 ---
 
-## � Pod Resources (requests/limits)
+## 🎯 Pod Resources (requests/limits)
 
 ### What are Pod Resources?
 
