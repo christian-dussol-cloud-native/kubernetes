@@ -84,7 +84,7 @@ Collection of visual presentations (carousels) showcasing advanced Kubernetes fe
 - Multi-tenant cluster governance
 - FinOps cost control
 
-**Related Article:**
+**Related Medium Article:** [Why Your Kubernetes Pods Keep Getting Rejected: The Resource Management Guide You Actually Need](https://medium.com/@christian.dussol/why-your-kubernetes-pods-keep-getting-rejected-the-resource-management-guide-you-actually-need-48ea965eb038)
 
 ---
 
