@@ -10,6 +10,7 @@ Collection of visual presentations (carousels) illustrating advanced Kubernetes 
 **Available Carousels:**
 - Kubernetes 1.33 - In-Place Pod Resize
 - Kubernetes Command Reference Guide
+- Kubernetes Resource Management Reference Guide
 
 ### [demo-features/](./demo-features)
 Demonstration scripts, configurations, and practical examples to test the features presented in the carousels.
