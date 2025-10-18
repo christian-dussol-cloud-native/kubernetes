@@ -56,6 +56,38 @@ Collection of visual presentations (carousels) showcasing advanced Kubernetes fe
 
 ---
 
+#### 3. Kubernetes Resource Management
+**File:** `Kubernetes-Resource-Management.pdf`  
+**Topic:** Complete resource governance with 4-layer architecture  
+**Date:** October 2025
+
+**What's Inside:**
+- 📊 **The Resource Management Trifecta:** Pod Resources, LimitRange, ResourceQuota
+- 🚀 **Layer 4 - Kyverno:** Policy-as-Code automation
+- 📝 **Complete YAML examples** for each component
+- ⚙️ **4-week implementation roadmap**
+- 🔧 **Production-ready configurations**
+- 🎯 **Connection to K8s 1.33 in-place pod resizing**
+
+**Key Topics Covered:**
+- 🎯 Requests vs Limits explained clearly
+- 🛡️ LimitRange guardrails for individual containers
+- 📊 ResourceQuota namespace budget control
+- 🔄 Complete validation flow
+- 🚀 Kyverno auto-remediation examples
+- ✅ 4-layer governance stack
+
+**Use Cases:**
+- Prevent "exceeded quota" errors
+- Stop pods from being rejected
+- Enable safe in-place pod resizing (K8s 1.33)
+- Multi-tenant cluster governance
+- FinOps cost control
+
+**Related Article:**
+
+---
+
 ## 🎯 Repository Usage
 
 These carousels are designed for:
@@ -63,3 +95,22 @@ These carousels are designed for:
 - **Team training** and knowledge sharing
 - **Production best practices** based on real-world experience
 - **Visual learning** of complex Kubernetes concepts
+
+---
+
+## 👤 Author
+
+**Christian Dussol**
+- GitHub: [@ChristianDussol](https://github.com/ChristianDussol)
+- LinkedIn: [Christian Dussol](https://www.linkedin.com/in/christiandussol)
+- Medium: [@christian.dussol](https://medium.com/@christian.dussol)
+
+---
+
+## 📝 License
+
+These resources are shared for educational purposes. Please reference the original author when sharing.
+
+---
+
+**⭐ If you find these resources helpful, please star this repository!**
